@@ -12,4 +12,3 @@ To get started with this repository, follow these steps:
 
    ```bash
    git clone https://github.com/sd694722/machine_learning_projects.git
-   cd your-repo
