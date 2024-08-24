@@ -44,56 +44,54 @@ pip install pandas scikit-learn joblib
 
 2. **Separate Features and Labels:**
 
-```python
-Copy code
-X = df[['age', 'gender']]
-y = df['genre']
-```
+   ```python
+   Copy code
+   X = df[['age', 'gender']]
+   y = df['genre']
+   ```
 
 3. **Split the Dataset:**
 
-```python
-Copy code
-from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-```
+   ```python
+   Copy code
+   from sklearn.model_selection import train_test_split
+   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+   ```
 
 4. **Train the Model:**
 
-```python
-Copy code
-from sklearn.tree import DecisionTreeClassifier
-model = DecisionTreeClassifier()
-model.fit(X_train, y_train)
-```
+   ```python
+   Copy code
+   from sklearn.tree import DecisionTreeClassifier
+   model = DecisionTreeClassifier()
+   model.fit(X_train, y_train)
+   ```
 
 5. **Evaluate the Model:**
 
-```python
-Copy code
-from sklearn.metrics import accuracy_score
-
-predictions = model.predict(X_test)
-accuracy = accuracy_score(y_test, predictions)
-print(f"Accuracy: {accuracy}")
-```
+   ```python
+   Copy code
+   from sklearn.metrics import accuracy_score
+   
+   predictions = model.predict(X_test)
+   accuracy = accuracy_score(y_test, predictions)
+   print(f"Accuracy: {accuracy}")
+   ```
 6. **Save the Model:**
 
-```python
-Copy code
-import joblib
-
-joblib.dump(model, 'music-recommender.joblib')
-```
+   ```python
+   Copy code
+   import joblib
+   
+   joblib.dump(model, 'music-recommender.joblib')
+   ```
 
 6. **Load and Use the Model:**
 
-```python
-Copy code
-loaded_model = joblib.load('music-recommender.joblib')
-input_data = pd.DataFrame([[21, 1], [22, 0]], columns=['age', 'gender'])
-sample_predictions = loaded_model.predict(input_data)
-print(sample_predictions)
-```
-
-
+   ```python
+   Copy code
+   loaded_model = joblib.load('music-recommender.joblib')
+   input_data = pd.DataFrame([[21, 1], [22, 0]], columns=['age', 'gender'])
+   sample_predictions = loaded_model.predict(input_data)
+   print(sample_predictions)
+   ```
