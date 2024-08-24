@@ -9,11 +9,9 @@ This project involves building a machine learning model to classify music genres
 - [Project Description](#project-description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Model Training](#model-training)
-- [Model Evaluation](#model-evaluation)
-- [Saving and Loading the Model](#saving-and-loading-the-model)
-- [Contributing](#contributing)
-- [License](#license)
+- Model Training
+- Model Evaluation
+- Saving and Loading the Model
 
 ## Project Description
 
