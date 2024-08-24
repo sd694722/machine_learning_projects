@@ -25,3 +25,16 @@ To get started with this project, you'll need to have Python installed. You can 
 
 ```bash
 pip install pandas scikit-learn joblib
+
+
+## Usage
+
+1. **Load the Dataset:**
+
+   To load the dataset into a Pandas DataFrame, use the following code:
+
+   ```python
+   import pandas as pd
+   
+   # Load the dataset
+   df = pd.read_csv('music.csv')
